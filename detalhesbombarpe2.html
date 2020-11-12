@@ -106,7 +106,212 @@
             -->
         </table>
         <!-- Fim da tabela responsável por exibir as imagens do produto específico, além do preço, calculo de frete e botão de compra -->
-    
+  
+        <!--
+            Descrição do produto.
+            Uso de parágrafos simples para descrição completa do produto
+        -->
+        <h3 id="descricao"><font face="Arial">Descrição completa</font></h3>
+        <hr>
+        <p>
+            <font face="Arial">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident reiciendis maxime quidem? Sed quisquam magni minus perspiciatis, at, modi sint vero cum placeat mollitia quas doloremque eum culpa, eligendi incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis nesciunt doloribus nostrum optio consectetur. Quibusdam accusantium iusto quia molestiae, voluptas laboriosam excepturi consequuntur ex odit praesentium officiis adipisci fugiat.<br><br>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint facilis maiores quisquam molestias voluptatum cupiditate dolorum dolore, exercitationem itaque repudiandae, qui veritatis reiciendis doloremque natus minus minima sed atque commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, porro nam! Numquam quisquam, debitis quia autem ratione accusamus doloremque tempora illum dignissimos neque sapiente quas non minus iusto aut tenetur.<br>
+            </font>
+        </p>
+        <br><br>
+
+        <!--
+            Especificações técnicas do produto.
+            Lista ordenada com cada uma das especificações do produto.
+        -->
+        <h3 id="especifica"><font face="Arial">Especificações técnicas</font></h3>
+        <hr>
+        <ol>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li><br>
+            <li>Provident reiciendis maxime quidem.</li><br>
+            <li>Sed quisquam magni minus perspiciatis, at, modi sint vero cum placeat mollitia quas doloremque eum culpa, eligendi incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis nesciunt doloribus nostrum optio consectetur.</li><br>
+            <li>Quibusdam accusantium iusto quia molestiae, voluptas laboriosam excepturi consequuntur ex odit praesentium officiis adipisci fugiat.</li><br>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li><br>
+            <li>Sint facilis maiores quisquam molestias voluptatum cupiditate dolorum dolore, exercitationem itaque repudiandae, qui veritatis reiciendis doloremque natus minus minima sed atque commodi.</li><br>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li><br>
+            <li>Quisquam, porro nam! Numquam quisquam, debitis quia autem ratione accusamus doloremque tempora illum dignissimos neque sapiente quas non minus iusto aut tenetur.</li><br>
+        </ol>        <!-- Fim das especificaçẽos. -->
+        
+        <!--
+            Comentários dos usuários.
+            Uso de tabela para dividir a página em dúas colunas,
+            uma coluna com avatar do usuário  e outra com comentário do usuáio.
+        -->
+        <h3 id="comentarios"><font face="Arial">Comentários</font></h3>
+        <hr>
+        <table>
+            <tr>    <!-- Primeira linha com fumuário. -->
+                <td>
+                    <img width="80px" height="auto" src="img/usuario.jpg" alt="Usuário desconhecido" title="Usuário desconhecido">
+                </td>
+                <td>
+                    <form action="#">   <!-- Formulário para envio de comentários, elogios, sugestões, etc. Sem ação por enquato -->
+                        <label for="coment"><font face="Arial">Compartilhe suas sugestões, elogios e/ou comentários.</font></label><br>
+                        <textarea id="coment" name="coment" placeholder="Digite seu comentário aqui" cols="120" rows="5"></textarea>
+                        <input type="submit" value="Enviar">
+                    </form>                
+                </td>
+            </tr>
+
+            <tr>    <!-- Demais linhas com comentários já anterióres. -->
+                <td>
+                    <img width="80px" height="auto" src="img/usuario.jpg" alt="Usuário desconhecido" title="Usuário desconhecido">
+                </td>
+                <td>
+                    <p>
+                        <font face="Arial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde deleniti iusto id consectetur nobis quod quam iure, dolorum commodi at distinctio magnam sed vel, magni beatae reiciendis sunt officia quibusdam.</font><br>
+                    </p>
+                </td>
+            </tr>
+            <tr>    <!-- Comentário anterior. -->
+                <td>
+                    <img width="80px" height="auto" src="img/usuario.jpg" alt="Usuário desconhecido" title="Usuário desconhecido">
+                </td>
+                <td>
+                    <p>
+                        <font face="Arial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aperiam nobis minima dolorum repellat voluptates quisquam modi unde exercitationem impedit molestias ex quidem, debitis assumenda similique dolore cum dolor ipsa.</font><br>
+                    </p>
+                </td>
+            </tr>
+            <tr>    <!-- Comentário anterior. -->
+                <td>
+                    <img width="80px" height="auto" src="img/usuario.jpg" alt="Usuário desconhecido" title="Usuário desconhecido">
+                </td>
+                <td>
+                    <p>
+                        <font face="Arial">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident reiciendis maxime quidem? Sed quisquam magni minus perspiciatis, at, modi sint vero cum placeat mollitia quas doloremque eum culpa, eligendi incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis nesciunt doloribus nostrum optio consectetur. Quibusdam accusantium iusto quia molestiae, voluptas laboriosam excepturi consequuntur ex odit praesentium officiis adipisci fugiat.</font><br>                
+                    </p>
+                </td>
+            </tr>            
+        </table>    <!-- Fim dos comentários. -->
+        <br><br>
+
+        <!--
+            Dúvidas e respostas dos úsuários.
+            Semelhando a seção anterior aqui há um formulário no inicio, e
+            uma tabela para organizar as perguntas e respostas.
+            O atributo bgcolor foi usado para destacar a diferença entre perguntas e respostas.
+        -->
+        <h3 id="duvidas"><font face="Arial">Dúvidas</font></h3>
+        <hr>        
+        <form action="#">   <!-- Formulário para envio de dúvidas. Formulário sem ação por enquanto. -->
+            <label for="duvida">
+                <font face="Arial">Tem alguma dúvida sobre este produto? Pergunte ao lojista e a outros compradores!</font>
+            </label><br>
+            <textarea id="duvida" name="duvida" cols="140" rows="5" placeholder="Pergunte sobreo produto, como utilizá-lo ou peça alguma dica"></textarea>
+            <input type="submit" value="Perguntar">
+        </form>     <!-- Fim do formulário. -->
+
+        <table width="100%">
+            <tr>    <!-- Dúvida/Pergunta. -->
+                <td colspan="3" bgcolor="#a9a9a9">
+                    <img width="60px" src="img/usuario.jpg" alt="Ícone de usuário da página" title="Usuário do website">                    
+                    <font face="Arial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet facere distinctio hic necessitatibus maxime cupiditate perferendis rem temporibus accusamus repellendus assumenda laborum blanditiis, excepturi quidem? Omnis nobis consectetur repellat provident?</font>
+                    <button disabled><font face="Arial"><b>Responder</b></font></button>    <!-- O botão de resposta esta desativado -->
+                </td>
+            </tr>   <!-- Fim da dúvida/pergunta. -->
+
+            <tr>    <!-- Resposta. -->
+                <td width="4%">&nbsp;</td>     <!-- Table date vazia para recuo visual da resposta. -->
+                <td width="4%">
+                    <img width="45px" src="img/usuario.jpg" alt="Ícone de usuário da página" title="Usuário do website">
+                </td>
+                <td bgcolor="#dcdcdc">
+                    <font face="Arial">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate sint voluptatibus, eos sequi et possimus asperiores omnis labore eveniet aliquid esse fuga perferendis sunt quibusdam architecto maxime odit numquam illo!</font>
+                </td>
+            </tr>   <!-- Fim da resposta. -->
+
+            <tr>    <!-- Resposta. -->
+                <td width="4%">&nbsp;</td>      <!-- Table date vazia para recuo visual da resposta. -->
+                <td width="4%">
+                    <img width="45px" src="img/usuario.jpg" alt="Ícone de usuário da página" title="Usuário do website">
+                </td>
+                <td bgcolor="#dcdcdc">
+                    <font face="Arial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime totam iure odio autem rerum. Aliquid blanditiis amet, tempora magnam enim esse, dolores saepe numquam maxime odit exercitationem! Ratione, quaerat minus.</font>
+                </td>
+            </tr><!-- Fim da resposta. -->
+
+            <tr>    <!-- Dúvida/Pergunta. -->
+                <td colspan="3" bgcolor="#a9a9a9">
+                    <img width="60px" src="img/usuario.jpg" alt="Ícone de usuário da página" title="Usuário do website">                    
+                    <font face="Arial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet facere distinctio hic necessitatibus maxime cupiditate perferendis rem temporibus accusamus repellendus assumenda laborum blanditiis, excepturi quidem? Omnis nobis consectetur repellat provident?</font>
+                    <button disabled><font face="Arial"><b>Responder</b></font></button>    <!-- O botão de resposta esta desativado -->
+                </td>
+            </tr>   <!-- Fim da dúvida/pergunta. -->
+
+            <tr>    <!-- Dúvida/Pergunta. -->
+                <td colspan="3" bgcolor="#a9a9a9">
+                    <img width="60px" src="img/usuario.jpg" alt="Ícone de usuário da página" title="Usuário do website">                    
+                    <font face="Arial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet facere distinctio hic necessitatibus maxime cupiditate perferendis rem temporibus accusamus repellendus assumenda laborum blanditiis, excepturi quidem? Omnis nobis consectetur repellat provident?</font>
+                    <button disabled><font face="Arial"><b>Responder</b></font></button>    <!-- O botão de resposta esta desativado -->
+                </td>
+            </tr>   <!-- Fim da dúvida/pergunta. -->
+
+            <tr>    <!-- Resposta. -->
+                <td width="4%">&nbsp;</td>      <!-- Table date vazia para recuo visual da resposta. -->
+                <td width="4%">
+                    <img width="45px" src="img/usuario.jpg" alt="Ícone de usuário da página" title="Usuário do website">
+                </td>
+                <td bgcolor="#dcdcdc">
+                    <font face="Arial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime totam iure odio autem rerum. Aliquid blanditiis amet, tempora magnam enim esse, dolores saepe numquam maxime odit exercitationem! Ratione, quaerat minus.</font>
+                </td>
+            </tr><!-- Fim da resposta. -->    
+            
+            <tr>    <!-- Dúvida/Pergunta. -->
+                <td colspan="3" bgcolor="#a9a9a9">
+                    <img width="60px" src="img/usuario.jpg" alt="Ícone de usuário da página" title="Usuário do website">                    
+                    <font face="Arial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet facere distinctio hic necessitatibus maxime cupiditate perferendis rem temporibus accusamus repellendus assumenda laborum blanditiis, excepturi quidem? Omnis nobis consectetur repellat provident?</font>
+                    <button disabled><font face="Arial"><b>Responder</b></font></button>    <!-- O botão de resposta esta desativado -->
+                </td>
+            </tr>   <!-- Fim da dúvida/pergunta. -->
+
+            <tr>    <!-- Resposta. -->
+                <td width="4%">&nbsp;</td>      <!-- Table date vazia para recuo visual da resposta. -->
+                <td width="4%">
+                    <img width="45px" src="img/usuario.jpg" alt="Ícone de usuário da página" title="Usuário do website">
+                </td>
+                <td bgcolor="#dcdcdc">
+                    <font face="Arial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime totam iure odio autem rerum. Aliquid blanditiis amet, tempora magnam enim esse, dolores saepe numquam maxime odit exercitationem! Ratione, quaerat minus.</font>
+                </td>
+            </tr><!-- Fim da resposta. --> 
+            
+            <tr>    <!-- Resposta. -->
+                <td width="4%">&nbsp;</td>      <!-- Table date vazia para recuo visual da resposta. -->
+                <td width="4%">
+                    <img width="45px" src="img/usuario.jpg" alt="Ícone de usuário da página" title="Usuário do website">
+                </td>
+                <td bgcolor="#dcdcdc">
+                    <font face="Arial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime totam iure odio autem rerum. Aliquid blanditiis amet, tempora magnam enim esse, dolores saepe numquam maxime odit exercitationem! Ratione, quaerat minus.</font>
+                </td>
+            </tr><!-- Fim da resposta. --> 
+            
+            <tr>    <!-- Resposta. -->
+                <td width="4%">&nbsp;</td>      <!-- Table date vazia para recuo visual da resposta. -->
+                <td width="4%">
+                    <img width="45px" src="img/usuario.jpg" alt="Ícone de usuário da página" title="Usuário do website">
+                </td>
+                <td bgcolor="#dcdcdc">
+                    <font face="Arial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, laborum. Porro esse, harum natus nesciunt sed, quas totam officia qui delectus aliquid, maiores deleniti eos laborum? Quasi eligendi quidem voluptatum.</font>
+                </td>
+            </tr><!-- Fim da resposta. --> 
+            
+            <tr>    <!-- Resposta. -->
+                <td width="4%">&nbsp;</td>      <!-- Table date vazia para recuo visual da resposta. -->
+                <td width="4%">
+                    <img width="45px" src="img/usuario.jpg" alt="Ícone de usuário da página" title="Usuário do website">
+                </td>
+                <td bgcolor="#dcdcdc">
+                    <font face="Arial">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum dignissimos fugiat cumque! Nesciunt dolore velit ad quam fugit facere deserunt consectetur dignissimos deleniti est doloribus necessitatibus, qui accusamus iure quo.</font>
+                </td>
+            </tr><!-- Fim da resposta. -->             
+        </table>
+
         <!-- Início da área formas de pagamento e direitos reservados-->
         <hr>
         <table>
