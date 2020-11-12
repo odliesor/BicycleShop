@@ -41,7 +41,74 @@
         </table>
         <!-- Fim do menu -->
     
-    
+        <!-- 
+            Início da tabela responsável por dividir uma área da página em 3 colunas:
+                1ª coluna exibe miniatura(s) do produto;
+                2ª coluna exibe o produto ampliado; e
+                3º coluna exibe pequeno resumo, preço e botões de calculo e compra.
+        -->        
+        <table>
+            <tr>    <!-- 1ª linha da tabela -->
+                
+                <!-- 1ª coluna: imagem(ns) em miniatura -->
+                <td rowspan="4" valign="top">   <!-- rowspan="4" para "forçar" outras <tr> dentro desta mesma <tr> -->
+                    <a href="detalhescaixadirecao1.html">
+                        <img width="100px" height="auto" src="./img/caixadirecaotrava1.jpg" alt="Caixa de direção 8 peças com trava" title="Caixa de direção 8 peças com trava">
+                    </a>
+                    <br>
+                    <a href="detalhescaixadirecao2.html">
+                        <img width="100px" height="auto" src="./img/caixadirecaotrava2.jpg" alt="Caixa de direção 8 peças com trava" title="Caixa de direção 8 peças com trava">
+                    </a>
+                    <a href="detalhescaixadirecao3.html">
+                        <img width="100px" height="auto" src="./img/caixadirecaotrava3.jpg" alt="Caixa de direção 8 peças com trava" title="Caixa de direção 8 peças com trava">
+                    </a>                   
+                </td><!-- Fim da 1ª coluna -->
+
+                <!-- 2ª coluna: imagem ampliada -->
+                <td rowspan="4">    <!-- rowspan="4" para "forçar" outras <tr> dentro desta mesma <tr> -->
+                    <img width="600px" height="auto" src="./img/caixadirecaotrava1.jpg" alt="Caixa de direção 8 peças com trava" title="Caixa de direção 8 peças com trava">
+                </td>   <!-- Fim da 2ª coluna -->
+
+                <!-- 3ª coluna: resumo e compra -->
+                <td colspan="2" valign="top" width="45%">
+                    <p>
+                        <font face="Arial" size="4"><strong>Caixa de direção 8 peças com trava</strong></font> 
+                    </p>
+                    <hr>
+                    <p>
+                        <font face="Arial">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Debitis asperiores natus nostrum corrupti et?
+                            Assumenda autem perspiciatis unde quae pariatur aperiam recusandae facilis, eligendi facere, quia nobis voluptate minima doloribus.
+                        </font>
+                    </p>
+
+                    <tr>    <!-- Duas colunas -->
+                        <td>    <!-- Primeira coluna: preços. -->
+                            <font color="red" size="4" face="Arial"><strike>R$ 15,90</strike></font><br>
+                            <font color="green" size="7" face="Arial">R$ 13,50</font>
+                        </td>
+                        <td align="center"><!-- Segunda coluna: botão comprar. -->
+                            <a href="manutencao.html"><button><font color="green" size="6" face="Arial">Comprar</font></button></a> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" valign="top">   <!-- sem este colspan sobraria uma célula na tabela sem preencimento e faltaria espaço para o formulário de calculo do frete.  -->
+                            <hr>
+                            <form action="#"> <!-- Formulário para calculo de frete atravéz do CEP, sem ação por enquanto -->
+                                <label for="cep"><font face="Arial">CEP</font></label>
+                                <input type="number" id="cep" name="cep" placeholder="somente números">                                
+                                <input type="submit" value="Calcular frete">
+                            </form>
+                        </td>
+                    </tr>
+                </td>
+            </tr>   <!-- Fim da 1ª linha da tabela -->
+            <!--
+                demais linhas desta tabela podem ser usadas neste espaço sem nenhum prejuiso ao visual da página.
+            -->
+        </table>
+        <!-- Fim da tabela responsável por exibir as imagens do produto específico, além do preço, calculo de frete e botão de compra -->
     
         <!-- Início da área formas de pagamento e direitos reservados-->
         <hr>
