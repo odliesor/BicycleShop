@@ -1,44 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caixa de direção - detalhes</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Bomba de ar com pedel - detalhes</title>
+
+        <link rel="stylesheet" href="./public/css/global.css">
+        <link rel="stylesheet" href="./public/css/menuRodape.css">
+        <link rel="stylesheet" href="./public/css/produtos.css">
+        <link rel="stylesheet" href="./public/css/detalhesProduto.css">
+        <link rel="stylesheet" href="./public/css/lojas.css">
+        <link rel="stylesheet" href="./public/css/contatos.css">
+    </head>
     <body>
         <!-- 
             Início do menu
-                Uma tabela com 5 colunas <th> com 20% de alrgura cada.
-                Usar <th> em vez de <td> neste caso evitou os atributos de negrito e centralizar.
-                A tag <th> é por default: centralizado e negrito.
         -->
-        <table width="100%" bgcolor="red">
-            <tr>
-                <th width="20%">
-                    <a href="index.html">
-                        <img width="100px" height="auto" src="./img/logo.png" alt="Logomarca Bicycle Shop" title="Bicycle Shop - Impulsionando sua bike!">
-                    </a>
-                </th>
-                <th width="20%">
-                    <a href="produtos.html">
-                        <font face="Arial" color="white">Produtos</font>
-                    </a>
-                </th>
-                <th width="20%">
-                    <a href="lojas.html">
-                        <font face="Arial" color="white">Nossas lojas</font>
-                    </a>
-                </th>
-                <th width="20%">
-                    <a href="contatos.html">
-                        <font face="Arial" color="white">Fale conosco</font>
-                    </a>
-                </th>
-                <th width="20%">
-                    <a href="carrinho.html"><img width="50px" height="auto" src="./img/carrinho.png" alt="Carrinho de compras" title="Seu carrinho de compras">
-                </th>
-            </tr>
-        </table>
+        <nav class="menu">
+            <ul class="opcoesMenu">
+                <li class="disporEmLinha">
+                    <a href="index.html"><img src="./public/img/logo.png" alt="Logomarca Bicycle Shop" title="Bicycle Shop - Impulsionando sua bike!"></a>
+                </li>
+                <li class="disporEmLinha">
+                    <a href="produtos.html">Produtos</a>
+                </li>
+                <li class="disporEmLinha">
+                    <a href="lojas.html">Nossas lojas</a>
+                </li>
+                <li class="disporEmLinha">
+                    <a href="contatos.html">Fale conosco</a>
+                </li>
+                <li class="disporEmLinha">
+                    <a href="carrinho.html"><img src="./public/img/carrinho2.png" alt="Carrinho de compras"
+                            title="Seu carrinho de compras"></a>
+                </li>
+            </ul>
+        </nav>
         <!-- Fim do menu -->
     
         <!-- 
@@ -52,27 +50,24 @@
                 
                 <!-- 1ª coluna: imagem(ns) em miniatura -->
                 <td rowspan="4" valign="top">   <!-- rowspan="4" para "forçar" outras <tr> dentro desta mesma <tr> -->
-                    <a href="detalhescaixadirecao1.html">
-                        <img width="100px" height="auto" src="./img/caixadirecaotrava1.jpg" alt="Caixa de direção 8 peças com trava" title="Caixa de direção 8 peças com trava">
+                    <a href="detalhesbombarpe1.html">
+                        <img width="100px" height="auto" src="./img/bombarpe.jpg" alt="Bomba de ar com pedal e manômetro" title="Bomba de ar com pedal e manômetro">
                     </a>
                     <br>
-                    <a href="detalhescaixadirecao2.html">
-                        <img width="100px" height="auto" src="./img/caixadirecaotrava2.jpg" alt="Caixa de direção 8 peças com trava" title="Caixa de direção 8 peças com trava">
-                    </a>
-                    <a href="detalhescaixadirecao3.html">
-                        <img width="100px" height="auto" src="./img/caixadirecaotrava3.jpg" alt="Caixa de direção 8 peças com trava" title="Caixa de direção 8 peças com trava">
+                    <a href="detalhesbombarpe2.html">
+                        <img width="100px" height="auto" src="./img/bombarpe3.jpg" alt="Bomba de ar com pedal e manômetro" title="Bomba de ar com pedal e manômetro">
                     </a>                   
                 </td><!-- Fim da 1ª coluna -->
 
                 <!-- 2ª coluna: imagem ampliada -->
                 <td rowspan="4">    <!-- rowspan="4" para "forçar" outras <tr> dentro desta mesma <tr> -->
-                    <img width="600px" height="auto" src="./img/caixadirecaotrava1.jpg" alt="Caixa de direção 8 peças com trava" title="Caixa de direção 8 peças com trava">
+                    <img width="600px" height="auto" src="./img/bombarpe.jpg" alt="Bomba de ar com pedal e manômetro" title="Bomba de ar com pedal e manômetro">
                 </td>   <!-- Fim da 2ª coluna -->
 
                 <!-- 3ª coluna: resumo e compra -->
                 <td colspan="2" valign="top" width="45%">
                     <p>
-                        <font face="Arial" size="4"><strong>Caixa de direção 8 peças com trava</strong></font> 
+                        <font face="Arial" size="4"><strong>Bomba de ar com pedal e manômetro</strong></font> 
                     </p>
                     <hr>
                     <p>
@@ -113,8 +108,8 @@
 
                     <tr>    <!-- Duas colunas -->
                         <td>    <!-- Primeira coluna: preços. -->
-                            <font color="red" size="4" face="Arial"><strike>R$ 15,90</strike></font><br>
-                            <font color="green" size="7" face="Arial">R$ 13,50</font>
+                            <font color="red" size="4" face="Arial"><strike>R$ 20,30</strike></font><br>
+                            <font color="green" size="7" face="Arial">R$ 18,75</font>
                         </td>
                         <td align="center"><!-- Segunda coluna: botão comprar. -->
                             <a href="manutencao.html"><button><font color="green" size="6" face="Arial">Comprar</font></button></a> 
@@ -138,7 +133,7 @@
         </table>
         <!-- Fim da tabela responsável por exibir as imagens do produto específico, além do preço, calculo de frete e botão de compra -->
     
-<!--
+        <!--
             Descrição do produto.
             Uso de parágrafos simples para descrição completa do produto
         -->
@@ -342,27 +337,15 @@
             </tr><!-- Fim da resposta. -->             
         </table>
 
-        <!-- Início da área formas de pagamento e direitos reservados-->
+        <!-- Início do rodapé-->
         <hr>
-        <table>
-            <tr>
-                <td align="center">
-                    <p>
-                        <font face="Arial" color="red"><strong>Formas de pagamento</strong></font>
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td align="center">
-                    <img width="30%" height="auto" src="./img/pagamento.png" alt="Formas de pagamento" title="Formas de pagamento">
-                </td>
-            </tr>
-            <tr>
-                <td align="center">
-                    <font face="Arial" size="2">&copy; Bicycle Shop</font> <!-- Direitos reservado -->
-                </td>
-            </tr>
-        </table>
-        <!-- Fim da área formas de pagamento e direitos reservados-->
+        <footer class="centralizar">
+            <p id="corPagamento">Formas de pagamento</p>
+
+            <img id="formasPagamento" src="./public/img/pagamento.png" alt="Formas de pagamento" title="Formas de pagamento">
+
+            <p>&copy; Bicycle Shop</p> <!-- Direitos reservado -->
+        </footer>
+        <!-- Fim do rodapé-->
     </body>
 </html>

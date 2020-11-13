@@ -1,0 +1,44 @@
+.menu{
+    background-color: red;
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 4px 4px 4px 0px;
+}
+
+.opcoesMenu {
+    margin:6px;
+    padding:0;
+
+    /* este bloco justifica os itens do menu */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/*  Muda a cor do texto/link do menu para branco */
+.opcoesMenu a { 
+    color: white;
+    text-decoration: none; /* removeo o sublinhado dos links  */
+    font-weight: bold;
+}
+
+.disporEmLinha{
+    display: inline-block;
+}
+
+li.disporEmLinha img {
+    height: 3rem;
+    vertical-align: middle;
+    border-radius: 2px;
+}
+
+#corPagamento {
+    color: red;
+    font-weight: bold;
+}
+
+#formasPagamento {
+    width: 15rem;
+}

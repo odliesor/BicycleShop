@@ -1,69 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrinho de compras</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Carrinho de compras</title>
+
+        <link rel="stylesheet" href="./public/css/global.css">
+        <link rel="stylesheet" href="./public/css/menuRodape.css">
+        <link rel="stylesheet" href="./public/css/produtos.css">
+        <link rel="stylesheet" href="./public/css/detalhesProduto.css">
+        <link rel="stylesheet" href="./public/css/lojas.css">
+        <link rel="stylesheet" href="./public/css/contatos.css">
+    </head>
     <body>
         <!-- 
             Início do menu
-                Uma tabela com 5 colunas <th> com 20% de alrgura cada.
-                Usar <th> em vez de <td> neste caso evitou os atributos de negrito e centralizar.
-                A tag <th> é por default: centralizado e negrito.
         -->
-        <table width="100%" bgcolor="red">
-            <tr>
-                <th width="20%">
-                    <a href="index.html">
-                        <img width="100px" height="auto" src="./img/logo.png" alt="Logomarca Bicycle Shop" title="Bicycle Shop - Impulsionando sua bike!">
-                    </a>
-                </th>
-                <th width="20%">
-                    <a href="produtos.html">
-                        <font face="Arial" color="white">Produtos</font>
-                    </a>
-                </th>
-                <th width="20%">
-                    <a href="lojas.html">
-                        <font face="Arial" color="white">Nossas lojas</font>
-                    </a>
-                </th>
-                <th width="20%">
-                    <a href="contatos.html">
-                        <font face="Arial" color="white">Fale conosco</font>
-                    </a>
-                </th>
-                <th width="20%">
-                    <a href="carrinho.html"><img width="50px" height="auto" src="./img/carrinho.png" alt="Carrinho de compras" title="Seu carrinho de compras">
-                </th>
-            </tr>
-        </table>
+        <nav class="menu">
+            <ul class="opcoesMenu">
+                <li class="disporEmLinha">
+                    <a href="index.html"><img src="./public/img/logo.png" alt="Logomarca Bicycle Shop" title="Bicycle Shop - Impulsionando sua bike!"></a>
+                </li>
+                <li class="disporEmLinha">
+                    <a href="produtos.html">Produtos</a>
+                </li>
+                <li class="disporEmLinha">
+                    <a href="lojas.html">Nossas lojas</a>
+                </li>
+                <li class="disporEmLinha">
+                    <a href="contatos.html">Fale conosco</a>
+                </li>
+                <li class="disporEmLinha">
+                    <a href="carrinho.html"><img src="./public/img/carrinho2.png" alt="Carrinho de compras"
+                            title="Seu carrinho de compras"></a>
+                </li>
+            </ul>
+        </nav>
         <!-- Fim do menu -->
     
         <center><img width="700px" height="auto" src="img/manutencao.png" alt="Página em manutencao" title="Página em manutencao"></center>
     
-        <!-- Início da área formas de pagamento e direitos reservados-->
+        <!-- Início do rodapé-->
         <hr>
-        <table>
-            <tr>
-                <td align="center">
-                    <p>
-                        <font face="Arial" color="red"><strong>Formas de pagamento</strong></font>
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td align="center">
-                    <img width="30%" height="auto" src="./img/pagamento.png" alt="Formas de pagamento" title="Formas de pagamento">
-                </td>
-            </tr>
-            <tr>
-                <td align="center">
-                    <font face="Arial" size="2">&copy; Bicycle Shop</font> <!-- Direitos reservado -->
-                </td>
-            </tr>
-        </table>
-        <!-- Fim da área formas de pagamento e direitos reservados-->
+        <footer class="centralizar">
+            <p id="corPagamento">Formas de pagamento</p>
+
+            <img id="formasPagamento" src="./public/img/pagamento.png" alt="Formas de pagamento" title="Formas de pagamento">
+
+            <p>&copy; Bicycle Shop</p> <!-- Direitos reservado -->
+        </footer>
+        <!-- Fim do rodapé-->
     </body>
 </html>

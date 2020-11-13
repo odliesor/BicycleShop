@@ -5,242 +5,222 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>Produtos - Bicycle Shop</title>
+
+        <link rel="stylesheet" href="./public/css/global.css">
+        <link rel="stylesheet" href="./public/css/menuRodape.css">
+        <link rel="stylesheet" href="./public/css/produtos.css">
+        <link rel="stylesheet" href="./public/css/detalhesProduto.css">
+        <link rel="stylesheet" href="./public/css/lojas.css">
+        <link rel="stylesheet" href="./public/css/contatos.css">
     </head>
     <body>
         <!-- 
             Início do menu
-                Uma tabela com 5 colunas <th> com 20% de alrgura cada.
-                Usar <th> em vez de <td> neste caso evitou os atributos de negrito e centralizar.
-                A tag <th> é por default: centralizado e negrito.
         -->
-        <table width="100%" bgcolor="red">
-            <tr>
-                <th width="20%">
-                    <a href="index.html">
-                        <img width="100px" height="auto" src="./img/logo.png" alt="Logomarca Bicycle Shop" title="Bicycle Shop - Impulsionando sua bike!">
-                    </a>
-                </th>
-                <th width="20%">
-                    <a href="produtos.html">
-                        <font face="Arial" color="white">Produtos</font>
-                    </a>
-                </th>
-                <th width="20%">
-                    <a href="lojas.html">
-                        <font face="Arial" color="white">Nossas lojas</font>
-                    </a>
-                </th>
-                <th width="20%">
-                    <a href="contatos.html">
-                        <font face="Arial" color="white">Fale conosco</font>
-                    </a>
-                </th>
-                <th width="20%">
-                    <a href="carrinho.html"><img width="50px" height="auto" src="./img/carrinho.png" alt="Carrinho de compras" title="Seu carrinho de compras">
-                </th>
-            </tr>
-        </table>
+        <nav class="menu">
+            <ul class="opcoesMenu">
+                <li class="disporEmLinha">
+                    <a href="index.html"><img src="./public/img/logo.png" alt="Logomarca Bicycle Shop" title="Bicycle Shop - Impulsionando sua bike!"></a>
+                </li>
+                <li class="disporEmLinha">
+                    <a href="produtos.html">Produtos</a>
+                </li>
+                <li class="disporEmLinha">
+                    <a href="lojas.html">Nossas lojas</a>
+                </li>
+                <li class="disporEmLinha">
+                    <a href="contatos.html">Fale conosco</a>
+                </li>
+                <li class="disporEmLinha">
+                    <a href="carrinho.html"><img src="./public/img/carrinho2.png" alt="Carrinho de compras" title="Seu carrinho de compras"></a>
+                </li>
+            </ul>
+        </nav>
         <!-- Fim do menu -->
 
-        <h2>Produtos</h2>
+        <!-- Cabeçalho semântico -->
+        <header>
+            <h2>Produtos</h2>
+        </header>
+
         <hr>
 
-        <table>
-            <tr>
-                <td rowspan="5" width="20%" valign="top">
-                    <h3><font face="Arial">Categoria</font></h3>
+        <!-- Inicio do conteúdo principal (semântico) da página -->
+        <main>
+            <div class="caixaFlexivel">
+                <section class="area-categoria">
+                    <h3>Categoria</h3>
                     <ol>
-                        <li><font>Componentes (10)</font></li>
-                        <li><font>Acessórios (0)</font></li>
-                        <li><font>Ferramentas (2)</font></li>
-                        <li><font>Transmissão (2)</font></li>
-                        <li><font>Serviços (0)</font></li>
+                        <!-- Lista ordenada com as categorias de produtos do web-site -->
+                        <li>Componentes (10)</li>
+                        <li>Acessórios (0)</li>
+                        <li>Ferramentas (2)</li>
+                        <li>Transmissão (2)</li>
+                        <li>Serviços (0)</li>
                     </ol>
-                </td>
-                <td width="20%" align="center" valign="bottom">
-                    <a href="detalhespedal1.html">
-                        <img width="200px" height="auto" src="./img/pedal.jpg" alt="Pedal de plastico - Preto com Vermelho" title="Pedal de plastico - Preto com Vermelho">
-                    </a>
-                    <br>
-                    <font face="Arial" size="2">Pedal de plastico - Preto com Vermelho</font>
-                    <hr>
-                    <font face="Arial" size="2"><strike>R$ 17,30</strike></font><br>
-                    <font face="Arial" size="4" color="red">R$ 14,90</font><br>
-                    <a href="detalhespedal1.html"><button><font face="Arial">Detalhes</font></button></a>
-                    <a href="manutencao.html"><button><font face="Arial">Comprar</font></button></a>
-                    <br><br>                   
-                </td>
-                <td width="20%" align="center" valign="bottom">
-                    <a href="detalhesbombarmao1.html">
-                        <img  width="107px" height="auto" src="./img/bombarmao2.jpg" alt="Bomba de ar para bicicletas" title="Bomba de ar para bicicletas">
-                    </a>
-                    <br>
-                    <font face="Arial" size="2">Bomba Yamada 30cm com conexão</font>
-                    <hr>
-                    <font face="Arial" size="2"><strike>R$ 15,60</strike></font><br>
-                    <font face="Arial" size="4" color="red">R$ 13,20</font><br>
-                    <a href="detalhesbombarmao1.html"><button><font face="Arial">Detalhes</font></button></a>
-                    <a href="manutencao.html"><button><font face="Arial">Comprar</font></button></a>
-                    <br><br>
-                </td>
-                <td width="20%" align="center" valign="bottom">
-                    <a href="detalhesgarfo1.html">
-                        <img width="80px" height="auto" src="./img/garfo1.jpg" alt="Garfo verde para bicicleta aro 26&dblac;" title="Garfo verde para bicicleta aro 26&dblac;">
-                    </a>
-                    <br>
-                    <font face="Arial" size="2">Garfo verde para bicicleta aro 26"</font>
-                    <hr>
-                    <font face="Arial" size="2"><strike>R$ 19,70</strike></font><br>
-                    <font face="Arial" size="4" color="red">R$ 17,90</font><br>
-                    <a href="detalhesgarfo1.html"><button><font face="Arial">Detalhes</font></button></a>
-                    <a href="manutencao.html"><button><font face="Arial">Comprar</font></button></a>
-                    <br><br>
-                </td>
-                <td width="20%" align="center" valign="bottom">
-                    <a href="detalhesselim1.html">
-                        <img width="135px" height="auto" src="./img/selim_traz.jpg" alt="Selim Royal MTB Amazonas" title="Selim Royal MTB Amazonas">
-                    </a>
-                    <br>
-                    <font face="Arial" size="2">Selim Royal MTB Amazonas</font>
-                    <hr>
-                    <font face="Arial" size="2"><strike>R$ 22,80</strike></font><br>
-                    <font face="Arial" size="4" color="red">R$ 20,10</font><br>
-                    <a href="detalhesselim1.html"><button><font face="Arial">Detalhes</font></button></a>
-                    <a href="manutencao.html"><button><font face="Arial">Comprar</font></button></a>
-                    <br><br>
-                </td>
-            </tr>
-            <tr>
-                <td width="20%" align="center" valign="bottom">
-                    <a href="detalhescoroa3velocidades1.html">
-                        <img  width="213px" height="auto" src="./img/coroa3vel2.jpg" alt="Coroa bicicleta de marcha 3 velocidades" title="Coroa bicicleta de marcha 3 velocidades">
-                    </a>
-                    <br>
-                    <font face="Arial" size="2">Coroa bicicleta de marcha 3 velocidades</font>
-                    <hr>
-                    <font face="Arial" size="2"><strike>R$ 24,70</strike></font><br>
-                    <font face="Arial" size="4" color="red">R$ 21,50</font><br>
-                    <a href="detalhescoroa3velocidades1.html"><button><font face="Arial">Detalhes</font></button></a>
-                    <a href="manutencao.html"><button><font face="Arial">Comprar</font></button></a>
-                    <br><br>
-                </td>
-                <td width="20%" align="center" valign="bottom">
-                    <a href="detalhesguidaomk1.html">
-                        <img width="220px" height="auto" src="./img/guidao_mk.jpg" alt="Guidão para bicicleta Monark" title="Guidão para bicicleta Monark">
-                    </a>
-                    <br>
-                    <font face="Arial" size="2">Guidão para bicicleta Monark</font>
-                    <hr>
-                    <font face="Arial" size="2"><strike>R$ 45,30</strike></font><br>
-                    <font face="Arial" size="4" color="red">R$ 40,90</font><br>
-                    <a href="detalhesguidaomk1.html"><button><font face="Arial">Detalhes</font></button></a>
-                    <a href="manutencao.html"><button><font face="Arial">Comprar</font></button></a>
-                    <br><br>
-                </td>
-                <td width="20%" align="center" valign="bottom">
-                    <a href="detalhesguidaostrada1.html">
-                        <img width="200px" height="auto" src="./img/guidao_strada.jpg" alt="Guidão para bicicleta ranger" title="Guidão para bicicleta ranger">
-                    </a>
-                    <br>
-                    <font face="Arial" size="2">Guidão Strada</font>
-                    <hr>
-                    <font face="Arial" size="2"><strike>R$ 22,40</strike></font><br>
-                    <font face="Arial" size="4" color="red">R$ 20,90</font><br>
-                    <a href="detalhesguidaostrada1.html"><button><font face="Arial">Detalhes</font></button></a>
-                    <a href="manutencao.html"><button><font face="Arial">Comprar</font></button></a>
-                    <br><br>
-                </td>
-                <td width="20%" align="center" valign="bottom">
-                    <a href="detalhesbombarpe1.html">
-                        <img width="200px" height="auto" src="./img/bombarpe.jpg" alt="Bomba de ar para bicicletas" title="Bomba de ar para bicicletas">
-                    </a>
-                    <br>
-                    <font face="Arial" size="2">Bomda de ar Com pedal e manômetro</font>
-                    <hr>
-                    <font face="Arial" size="2"><strike>R$ 20,30</strike></font><br>
-                    <font face="Arial" size="4" color="red">R$ 18,75</font><br>
-                    <a href="detalhesbombarpe1.html"><button><font face="Arial">Detalhes</font></button></a>
-                    <a href="manutencao.html"><button><font face="Arial">Comprar</font></button></a>
-                    <br><br>
-                </td>
-            </tr>
-            <tr>
-                <td width="20%" align="center" valign="bottom">
-                    <a href="detalhespedivela1.html">
-                        <img width="200px" height="auto" src="./img/pedivela.jpg" alt="Pedivela monobloco cromado" title="Pedivela monobloco cromado">
-                    </a>
-                    <br>
-                    <font face="Arial" size="2">Pedivela monobloco cromadoo</font>
-                    <hr>
-                    <font face="Arial" size="2"><strike>R$ 25,30</strike></font><br>
-                    <font face="Arial" size="4" color="red">R$ 22,80</font><br>
-                    <a href="detalhespedivela1.html"><button><font face="Arial">Detalhes</font></button></a>
-                    <a href="manutencao.html"><button><font face="Arial">Comprar</font></button></a>
-                    <br><br>
-                </td>
-                <td width="20%" align="center" valign="bottom">
-                    <a href="detalhesrodalivre6velocidades1.html">
-                        <img width="200px" height="auto" src="./img/rodalivre6vol2.jpg" alt="Roda livre 6 velocidades para bicicleta de marcha" title="Roda livre 6 velocidades para bicicleta de marcha">
-                    </a>
-                    <br>
-                    <font face="Arial" size="2">Roda livre 6 velocidades</font>
-                    <hr>
-                    <font face="Arial" size="2"><strike>R$ 32,50</strike></font><br>
-                    <font face="Arial" size="4" color="red">R$ 29,90</font><br>
-                    <a href="detalhesrodalivre6velocidades1.html"><button><font face="Arial">Detalhes</font></button></a>
-                    <a href="manutencao.html"><button><font face="Arial">Comprar</font></button></a>
-                    <br><br>
-                </td>
-                <td width="20%" align="center" valign="bottom">
-                    <a href="detalhescuborolamdiante1.html">
-                        <img width="200px" height="auto" src="./img/cuborolamento_dianteiro1.jpg" alt="Cobo dianteiro com rolameto" title="Cobo dianteiro com rolameto">
-                    </a>
-                    <br>
-                    <font face="Arial" size="2">Cubo dianteiro com rolamentos</font>
-                    <hr>
-                    <font face="Arial" size="2"><strike>R$ 24,90</strike></font><br>
-                    <font face="Arial" size="4" color="red">R$ 22,30</font><br>
-                    <a href="detalhescuborolamdiante1.html"><button><font face="Arial">Detalhes</font></button></a>
-                    <a href="manutencao.html"><button><font face="Arial">Comprar</font></button></a>
-                    <br><br>
-                </td>
-                <td width="20%" align="center" valign="bottom">
-                    <a href="detalhescaixadirecao1.html">
-                        <img width="200px" height="auto" src="./img/caixadirecaotrava1.jpg" alt="Caixa de direção 8 peças com trava" title="Caixa de direção 8 peças com trava">
-                    </a>
-                    <br>
-                    <font face="Arial" size="2">Caixa de direção 8 peças com trava</font>
-                    <hr>
-                    <font face="Arial" size="2"><strike>R$ 15,90</strike></font><br>
-                    <font face="Arial" size="4" color="red">R$ 13,50</font><br>
-                    <a href="detalhescaixadirecao1.html"><button><font face="Arial">Detalhes</font></button></a>
-                    <a href="manutencao.html"><button><font face="Arial">Comprar</font></button></a>
-                    <br><br>
-                </td>
-            </tr>
-        </table>
+                </section>
 
-        <!-- Início da área formas de pagamento e direitos reservados-->
+                <section class="area-produtos">
+                    <ul class="justifica">
+                        <li class="box-produto">
+                            <a href="detalhespedal.html">
+                                <img src="./public/img/pedal.jpg" alt="Pedal de plastico - Preto com Vermelho" title="Pedal de plastico - Preto com Vermelho">
+                            </a>
+                            <br>
+                            <p>Pedal de plastico</p>
+                            <hr>
+                            <p class="precoTachado">R$ 17,30</p>
+                            <p class="precoDeVenda">R$ 14,90</p>
+                            <a href="detalhespedal.html"><button>Detalhes</button></a>
+                            <a href="manutencao.html"><button>Comprar</button></a><br><br>
+                        </li>
+                        <li class="box-produto">
+                            <a href="detalhesbombarmao.html">
+                                <img src="./public/img/bombarmao2.jpg" alt="Bomba Yamada 30cm com conexão" title="Bomba Yamada 30cm com conexão">
+                            </a>
+                            <br>
+                            <p>Bomba Yamada 30cm</p>
+                            <hr>
+                            <p class="precoTachado">R$ 15,60</p>
+                            <p class="precoDeVenda">R$ 13,20</p>
+                            <a href="detalhesbombarmao.html"><button>Detalhes</button></a>
+                            <a href="manutencao.html"><button>Comprar</button></a><br><br>
+                        </li>
+                        <li class="box-produto">
+                            <a href="detalhesgarfo.html">
+                                <img src="./public/img/garfo1.jpg" alt="Garfo verde para bicicleta aro 26&dblac;" title="Garfo verde para bicicleta aro 26&dblac;">
+                            </a>
+                            <br>
+                            <p>Garfo para bicicleta aro 26"</p>
+                            <hr>
+                            <p class="precoTachado">R$ 19,70</p>
+                            <p class="precoDeVenda">R$ 17,90</p>
+                            <a href="detalhesgarfo.html"><button>Detalhes</button></a>
+                            <a href="manutencao.html"><button>Comprar</button></a><br><br>
+                        </li>
+                        <li class="box-produto">
+                            <a href="detalhesselim.html">
+                                <img src="./public/img/selim_traz.jpg" alt="Selim Royal MTB Amazonas" title="Selim Royal MTB Amazonas">
+                            </a>
+                            <br>
+                            <p>Selim Royal MTB Amazonas</p>
+                            <hr>
+                            <p class="precoTachado">R$ 22,80</p>
+                            <p class="precoDeVenda">R$ 20,10</p>
+                            <a href="detalhesselim.html"><button>Detalhes</button></a>
+                            <a href="manutencao.html"><button>Comprar</button></a><br><br>
+                        </li>
+                        <li class="box-produto">
+                            <a href="detalhescoroa3velocidades.html">
+                                <img src="./public/img/coroa3vel2.jpg" alt="Coroa bicicleta de marcha 3 velocidades" title="Coroa bicicleta de marcha 3 velocidades">
+                            </a>
+                            <br>
+                            <p>Coroa 3 velocidades</p>
+                            <hr>
+                            <p class="precoTachado">R$ 24,70</p>
+                            <p class="precoDeVenda">R$ 21,50</p>
+                            <a href="detalhescoroa3velocidades.html"><button>Detalhes</button></a>
+                            <a href="manutencao.html"><button>Comprar</button></a><br><br>
+                        </li>
+                        <li class="box-produto">
+                            <a href="detalhesguidaomk.html">
+                                <img src="./public/img/guidao_mk.jpg" alt="Guidão para bicicleta Monark" title="Guidão para bicicleta Monark">
+                            </a> <br>
+                            <p>Guidão para bicicleta Monark</p>
+                            <hr>
+                            <p class="precoTachado">R$ 45,30</p>
+                            <p class="precoDeVenda">R$ 40,90</p>
+                            <a href="detalhesguidaomk.html"><button>Detalhes</button></a>
+                            <a href="manutencao.html"><button>Comprar</button></a><br><br>
+                        </li>
+                        <li class="box-produto">
+                            <a href="detalhesguidaostrada.html">
+                                <img src="./public/img/guidao_strada.jpg" alt="Guidão Strada" title="Guidão Strada">
+                            </a>
+                            <br>
+                            <p>Guidão Strada</p>
+                            <hr>
+                            <p class="precoTachado">R$ 22,40</p>
+                            <p class="precoDeVenda">R$ 20,90</p>
+                            <a href="detalhesguidaostrada.html"><button>Detalhes</button></a>
+                            <a href="manutencao.html"><button>Comprar</button></a><br><br>
+                        </li>
+                        <li class="box-produto">
+                            <a href="detalhesbombarpe.html">
+                                <img src="./public/img/bombarpe.jpg" alt="Bomba de ar com pedal e manômetro" title="Bomba de ar com pedal e manômetro">
+                            </a>
+                            <br>
+                            <p>Bomda de ar com pedal</p>
+                            <hr>
+                            <p class="precoTachado">R$ 20,30</p>
+                            <p class="precoDeVenda">R$ 18,75</p>
+                            <a href="detalhesbombarpe.html"><button>Detalhes</button></a>
+                            <a href="manutencao.html"><button>Comprar</button></a><br><br>
+                        </li>
+                        <li class="box-produto">
+                            <a href="detalhespedivela.html">
+                                <img src="./public/img/pedivela.jpg" alt="Bomba de ar para bicicletas" title="Bomba de ar para bicicletas">
+                            </a>
+                            <br>
+                            <p>Pedivela monobloco</p>
+                            <hr>
+                            <p class="precoTachado">R$ 25,30</p>
+                            <p class="precoDeVenda">R$ 22,80</p>
+                            <a href="detalhespedivela.html"><button>Detalhes</button></a>
+                            <a href="manutencao.html"><button>Comprar</button></a><br><br>
+                        </li>
+                        <li class="box-produto">
+                            <a href="detalhesrodalivre6velocidades.html">
+                                <img src="./public/img/rodalivre6vol2.jpg" alt="Roda livre 6 velocidades para bicicleta de marcha"
+                                    title="Roda livre 6 velocidades para bicicleta de marcha">
+                            </a>
+                            <br>
+                            <p>Roda livre 6 velocidades</p>
+                            <hr>
+                            <p class="precoTachado">R$ 32,50</p>
+                            <p class="precoDeVenda">R$ 29,90</p>
+                            <a href="detalhesrodalivre6velocidades.html"><button>Detalhes</button></a>
+                            <a href="manutencao.html"><button>Comprar</button></a><br><br>
+                        </li>
+                        <li class="box-produto">
+                            <a href="detalhescuborolamdiante.html">
+                                <img src="./public/img/cuborolamento_dianteiro1.jpg" alt="Cubo dianteiro com rolametos" title="Cubo dianteiro com rolametos">
+                            </a>
+                            <br>
+                            <p>Cubo dianteiro com rolamentos</p>
+                            <hr>
+                            <p class="precoTachado">R$ 24,90</p>
+                            <p class="precoDeVenda">R$ 22,30</p>
+                            <a href="detalhescuborolamdiante.html"><button>Detalhes</button></a>
+                            <a href="manutencao.html"><button>Comprar</button></a><br><br>
+                        </li>
+                        <li class="box-produto">
+                            <a href="detalhescaixadirecao.html">
+                                <img src="./public/img/caixadirecaotrava1.jpg" alt="Caixa de direção 8 peças com trava" title="Caixa de direção 8 peças com trava">
+                            </a>
+                            <br>
+                            <p>Caixa de direção com trava</p>
+                            <hr>
+                            <p class="precoTachado">R$ 15,90</p>
+                            <p class="precoDeVenda">R$ 13,50</p>
+                            <a href="detalhescaixadirecao.html"><button>Detalhes</button></a>
+                            <a href="manutencao.html"><button>Comprar</button></a><br><br>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+        <!-- Fim do conteúdo principal (semântico) da página -->
+
+        <!-- Início do rodapé-->
         <hr>
-        <table>
-            <tr>        
-                <td align="center">
-                    <p>
-                        <font face="Arial" color="red"><strong>Formas de pagamento</strong></font>
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td align="center">
-                    <img width="30%" height="auto" src="./img/pagamento.png" alt="Formas de pagamento" title="Formas de pagamento">
-                </td>    
-            </tr>
-            <tr>
-                <td align="center">
-                    <font face="Arial" size="2">&copy; Bicycle Shop</font> <!-- Direitos reservado -->
-                </td>
-            </tr>
-        </table>
-        <!-- Fim da área formas de pagamento e direitos reservados-->
+        <footer class="centralizar">
+            <p id="corPagamento">Formas de pagamento</p>
+
+            <img id="formasPagamento" src="./public/img/pagamento.png" alt="Formas de pagamento" title="Formas de pagamento">
+
+            <p>&copy; Bicycle Shop</p> <!-- Direitos reservado -->
+        </footer>
+        <!-- Fim do rodapé-->
     </body>
 </html>
