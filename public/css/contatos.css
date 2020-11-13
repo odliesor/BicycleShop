@@ -1,0 +1,22 @@
+.nossoEmail, .nossoWhatsapp {
+    width: 50%;
+    padding: 40px;
+}
+
+.nossoEmail img, .nossoWhatsapp img{
+    width: 40px;
+}
+
+.nossoEmail p, .nossoWhatsapp p{
+    display: inline;
+    font-weight: bold;
+}
+
+.contactenos label {
+    display: block;
+}
+
+#email, #mensagem {
+    width: 50%;
+}
+

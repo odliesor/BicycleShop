@@ -39,31 +39,34 @@
         </nav>
         <!-- Fim do menu -->
 
-        <h2>Fale conosco</h2>
+        <head>
+            <h2>Fale conosco</h2>
+        </head>
+
         <hr>
 
-        <table border="0" width="100%" cellpadding="20">
-            <tr>
-                <td width="50%" aling="center">
-                    <img src="./img/email.png" width="40px">
-                    <font face="Arial" size="4">contato@bicycleshop.com</font>
-                </td>
-    
-                <td width="50%" aling="center">
-                    <img src="./img/whatsapp.png"width="40px">
-                    <font face="Arial" size="4">(82) 99999-9999</font>
-                </td>
-            </tr>
-        </table>
-    
-        <form>
-            <h4>Nome</h4>
-            <input type="text"style="width: 400px" placeholder="Digite seu nome aqui">
-            <h4>Mensagem</h4>
-            <textarea placeholder="Digite sua mensagem nesta área" style="width: 400px; height: 300px;"></textarea>
-            <input type="submit" value="Enviar">
-    
-        </form>
+        <main>
+            <div class="caixaFlexivel">
+                <div class="nossoEmail">
+                    <img src="./public/img/email.png" alt="email" title="Nosso e-mail">
+                    <p>contato@bicycleshop.com</p>
+                </div>
+                <div class="nossoWhatsapp">
+                    <img src="./public/img/whatsapp.png" alt="whatsapp" title="Nosso WhatsApp">
+                    <p>(82) 99999-9999</p>
+                </div>
+            </div>
+            <div class="contactenos">
+                <form>
+                    <!-- Formulário para um contato breve por meio da página -->
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="email" placeholder="Digite seu nome aqui">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Digite seu mensagem nesta área"></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </main>
 
         <!-- Início do rodapé-->
         <hr>
