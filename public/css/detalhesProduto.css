@@ -1,0 +1,138 @@
+
+.demonstraProduto{
+    display:flex;
+}
+
+.boxImagens {
+    position: absolute;
+    width: 680px;
+    height: 460px;
+    display: inline-block;
+    background-color: darkgray;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.imgMiniatura {
+    width: 6rem;
+    display: block;
+    margin: 3px;
+    border-radius: 2px;
+}
+
+.imgAmpliada{
+    position: absolute;
+    top: 3px;
+    left: 7rem;
+    width: 35rem;
+    display: none;
+    border-radius: 3px;
+}
+
+img.imgMiniatura:hover~img.imgAmpliada {
+    display: block;
+}
+
+.resumoProduto {
+    margin-left: 42rem;
+    padding-left: 20px;
+}
+
+.resumoProduto p {
+    text-align: justify;
+}
+
+div.resumoProduto ul {
+    list-style: none;
+    display: inline-block;
+}
+
+ul.navegaPagina li {
+    margin: 4px;
+}
+
+.opcoesPagamento {
+    padding: 4px;
+    color: DarkGray;
+    background-color: LightGrey;
+    border-radius: 3px;
+}
+
+.opcoesPagamento a {
+    text-decoration: none;
+    color:DarkGray;
+}
+
+#desativado {
+    color: Black;
+    font-weight: bold;
+}
+
+.tamanhoMedio {
+    font-size: 18pt;
+}
+
+.tamanhoGrande {
+    font-size: 30pt;
+}
+
+.botaoComprar {
+    margin-right: 60pt;
+    color: green;
+    font-size:25px;
+}
+
+.caixaFlexivel {
+    display: flex;
+}
+
+div.frete input {
+    margin: 4px;
+}
+
+div#areaDescricao p, div#areaEspecificacao li, div#areaComentarios .caixaFlexivel p {
+    text-align: justify;
+}
+
+div#areaComentarios textarea, div#areaDuvidas textarea {
+    width: 50%;
+    resize: none;
+}
+
+div#areaComentarios .caixaFlexivel img {
+    width: 80px;
+    height: auto;
+}
+
+div#areaDuvidas .duvidaPublicada img {
+    width: 60px;
+}
+
+div#areaDuvidas .respostaUsuario img {
+    width: 45px;
+}
+
+.duvidaPublicada {
+    display: flex;
+    text-align: justify;
+    background-color:#a9a9a9;
+    margin-top: 15px;
+    margin-bottom: 4px;
+    padding-right: 3px;
+    border-radius: 2px;
+}
+
+#areaDuvidas img, textarea {
+    margin: 3px;
+    border-radius: 2px;
+}
+
+.respostaUsuario, .respostaLogista {
+    display: flex;
+    background-color: #dcdcdc;
+    text-align: justify;
+    margin-left: 60px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding: 3px;
+    border-radius: 2px;
+}
