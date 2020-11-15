@@ -38,12 +38,18 @@
 .box-produto {
     text-align: center;
     display: inline-block;
-    width: 14em;
-    height: 355px;
+    width: 235px;
+    height: 305px;
+    border-radius: 4px;
 }
 
 li.box-produto div {
-    height: 180px;
+    height: 170px;
+    padding: 5px;
+}
+
+li.box-produto p {
+    margin-bottom: 0;
 }
 
 .box-produto img {
