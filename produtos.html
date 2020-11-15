@@ -12,6 +12,8 @@
         <link rel="stylesheet" href="./public/css/detalhesProduto.css">
         <link rel="stylesheet" href="./public/css/lojas.css">
         <link rel="stylesheet" href="./public/css/contatos.css">
+
+        <script src="./public/js/produtos.js"></script>
     </head>
     <body>
         <!-- 
@@ -50,23 +52,26 @@
             <div class="caixaFlexivel">
                 <section class="area-categoria">
                     <h3>Categoria</h3>
-                    <ol>
-                        <!-- Lista ordenada com as categorias de produtos do web-site -->
-                        <li>Componentes (10)</li>
-                        <li>Acessórios (0)</li>
-                        <li>Ferramentas (2)</li>
-                        <li>Transmissão (2)</li>
-                        <li>Serviços (0)</li>
-                    </ol>
+                    <ul>
+                        <!-- Lista não ordenada com as categorias de produtos do web-site -->
+                        <li onclick="exibir_todos('todos')">Todos (19)</li>
+                        <li onclick="exibir_categoria('componente')">Componentes (8)</li>
+                        <li onclick="exibir_categoria('acessorio')">Acessórios (3)</li>
+                        <li onclick="exibir_categoria('ferramenta')">Ferramentas (2)</li>
+                        <li onclick="exibir_categoria('transmissao')">Transmissão (3)</li>
+                        <li onclick="exibir_categoria('servico')">Serviços (3)</li>
+                    </ul>
                 </section>
 
                 <section class="area-produtos">
                     <ul class="justifica">
-                        <li class="box-produto">
-                            <a href="detalhespedal.html">
-                                <img src="./public/img/pedal.jpg" alt="Pedal de plastico - Preto com Vermelho" title="Pedal de plastico - Preto com Vermelho">
-                            </a>
-                            <br>
+                        <li class="box-produto" id="componente" >
+                            <div>
+                                <a href="detalhespedal.html">
+                                    <img class="imagem_destaca" src="./public/img/pedal.jpg" alt="Pedal de plastico - Preto com Vermelho" title="Pedal de plastico - Preto com Vermelho" onmouseover="destaque(this)" onmouseout="normal(this)">
+                                </a>
+                            </div>
+
                             <p>Pedal de plastico</p>
                             <hr>
                             <p class="precoTachado">R$ 17,30</p>
@@ -74,11 +79,13 @@
                             <a href="detalhespedal.html"><button>Detalhes</button></a>
                             <a href="manutencao.html"><button>Comprar</button></a><br><br>
                         </li>
-                        <li class="box-produto">
-                            <a href="detalhesbombarmao.html">
-                                <img src="./public/img/bombarmao2.jpg" alt="Bomba Yamada 30cm com conexão" title="Bomba Yamada 30cm com conexão">
-                            </a>
-                            <br>
+                        <li class="box-produto" id="ferramenta">
+                            <div>
+                                <a href="detalhesbombarmao.html">
+                                    <img src="./public/img/bombarmao2.jpg" alt="Bomba Yamada 30cm com conexão" title="Bomba Yamada 30cm com conexão" onmouseover="destaque(this)" onmouseout="normal(this)">
+                                </a>
+                            </div>
+
                             <p>Bomba Yamada 30cm</p>
                             <hr>
                             <p class="precoTachado">R$ 15,60</p>
@@ -86,11 +93,13 @@
                             <a href="detalhesbombarmao.html"><button>Detalhes</button></a>
                             <a href="manutencao.html"><button>Comprar</button></a><br><br>
                         </li>
-                        <li class="box-produto">
-                            <a href="detalhesgarfo.html">
-                                <img src="./public/img/garfo1.jpg" alt="Garfo verde para bicicleta aro 26&dblac;" title="Garfo verde para bicicleta aro 26&dblac;">
-                            </a>
-                            <br>
+                        <li class="box-produto" id="componente">
+                            <div>
+                                <a href="detalhesgarfo.html">
+                                    <img src="./public/img/garfo1.jpg" alt="Garfo verde para bicicleta aro 26&dblac;" title="Garfo verde para bicicleta aro 26&dblac;" onmouseover="destaque(this)" onmouseout="normal(this)">
+                                </a>
+                            </div>
+
                             <p>Garfo para bicicleta aro 26"</p>
                             <hr>
                             <p class="precoTachado">R$ 19,70</p>
@@ -98,11 +107,13 @@
                             <a href="detalhesgarfo.html"><button>Detalhes</button></a>
                             <a href="manutencao.html"><button>Comprar</button></a><br><br>
                         </li>
-                        <li class="box-produto">
-                            <a href="detalhesselim.html">
-                                <img src="./public/img/selim_traz.jpg" alt="Selim Royal MTB Amazonas" title="Selim Royal MTB Amazonas">
-                            </a>
-                            <br>
+                        <li class="box-produto" id="componente">
+                            <div>
+                                <a href="detalhesselim.html">
+                                    <img src="./public/img/selim_traz.jpg" alt="Selim Royal MTB Amazonas" title="Selim Royal MTB Amazonas" onmouseover="destaque(this)" onmouseout="normal(this)">
+                                </a>
+                            </div>
+
                             <p>Selim Royal MTB Amazonas</p>
                             <hr>
                             <p class="precoTachado">R$ 22,80</p>
@@ -110,11 +121,13 @@
                             <a href="detalhesselim.html"><button>Detalhes</button></a>
                             <a href="manutencao.html"><button>Comprar</button></a><br><br>
                         </li>
-                        <li class="box-produto">
-                            <a href="detalhescoroa3velocidades.html">
-                                <img src="./public/img/coroa3vel2.jpg" alt="Coroa bicicleta de marcha 3 velocidades" title="Coroa bicicleta de marcha 3 velocidades">
-                            </a>
-                            <br>
+                        <li class="box-produto" id="transmissao">
+                            <div>
+                                <a href="detalhescoroa3velocidades.html">
+                                    <img src="./public/img/coroa3vel2.jpg" alt="Coroa bicicleta de marcha 3 velocidades" title="Coroa bicicleta de marcha 3 velocidades" onmouseover="destaque(this)" onmouseout="normal(this)">
+                                </a>
+                            </div>
+
                             <p>Coroa 3 velocidades</p>
                             <hr>
                             <p class="precoTachado">R$ 24,70</p>
@@ -122,10 +135,13 @@
                             <a href="detalhescoroa3velocidades.html"><button>Detalhes</button></a>
                             <a href="manutencao.html"><button>Comprar</button></a><br><br>
                         </li>
-                        <li class="box-produto">
-                            <a href="detalhesguidaomk.html">
-                                <img src="./public/img/guidao_mk.jpg" alt="Guidão para bicicleta Monark" title="Guidão para bicicleta Monark">
-                            </a> <br>
+                        <li class="box-produto" id="componente">
+                            <div>
+                                <a href="detalhesguidaomk.html">
+                                    <img src="./public/img/guidao_mk.jpg" alt="Guidão para bicicleta Monark" title="Guidão para bicicleta Monark" onmouseover="destaque(this)" onmouseout="normal(this)">
+                                </a>
+                            </div>
+
                             <p>Guidão para bicicleta Monark</p>
                             <hr>
                             <p class="precoTachado">R$ 45,30</p>
@@ -133,11 +149,13 @@
                             <a href="detalhesguidaomk.html"><button>Detalhes</button></a>
                             <a href="manutencao.html"><button>Comprar</button></a><br><br>
                         </li>
-                        <li class="box-produto">
-                            <a href="detalhesguidaostrada.html">
-                                <img src="./public/img/guidao_strada.jpg" alt="Guidão Strada" title="Guidão Strada">
-                            </a>
-                            <br>
+                        <li class="box-produto" id="componente">
+                            <div>
+                                <a href="detalhesguidaostrada.html">
+                                    <img src="./public/img/guidao_strada.jpg" alt="Guidão Strada" title="Guidão Strada" onmouseover="destaque(this)" onmouseout="normal(this)">
+                                </a>
+                            </div>
+
                             <p>Guidão Strada</p>
                             <hr>
                             <p class="precoTachado">R$ 22,40</p>
@@ -145,23 +163,27 @@
                             <a href="detalhesguidaostrada.html"><button>Detalhes</button></a>
                             <a href="manutencao.html"><button>Comprar</button></a><br><br>
                         </li>
-                        <li class="box-produto">
-                            <a href="detalhesbombarpe.html">
-                                <img src="./public/img/bombarpe.jpg" alt="Bomba de ar com pedal e manômetro" title="Bomba de ar com pedal e manômetro">
-                            </a>
-                            <br>
-                            <p>Bomda de ar com pedal</p>
+                        <li class="box-produto" id="ferramenta">
+                            <div>
+                                <a href="detalhesbombarpe.html">
+                                    <img src="./public/img/bombarpe.jpg" alt="Bomba de ar com pedal e manômetro" title="Bomba de ar com pedal e manômetro" onmouseover="destaque(this)" onmouseout="normal(this)">
+                                </a>
+                            </div>
+
+                            <p>Bomba de ar com pedal</p>
                             <hr>
                             <p class="precoTachado">R$ 20,30</p>
                             <p class="precoDeVenda">R$ 18,75</p>
                             <a href="detalhesbombarpe.html"><button>Detalhes</button></a>
                             <a href="manutencao.html"><button>Comprar</button></a><br><br>
                         </li>
-                        <li class="box-produto">
-                            <a href="detalhespedivela.html">
-                                <img src="./public/img/pedivela.jpg" alt="Bomba de ar para bicicletas" title="Bomba de ar para bicicletas">
-                            </a>
-                            <br>
+                        <li class="box-produto" id="transmissao">
+                            <div>
+                                <a href="detalhespedivela.html">
+                                    <img src="./public/img/pedivela.jpg" alt="Bomba de ar para bicicletas" title="Bomba de ar para bicicletas" onmouseover="destaque(this)" onmouseout="normal(this)">
+                                </a>
+                            </div>
+
                             <p>Pedivela monobloco</p>
                             <hr>
                             <p class="precoTachado">R$ 25,30</p>
@@ -169,12 +191,13 @@
                             <a href="detalhespedivela.html"><button>Detalhes</button></a>
                             <a href="manutencao.html"><button>Comprar</button></a><br><br>
                         </li>
-                        <li class="box-produto">
-                            <a href="detalhesrodalivre6velocidades.html">
-                                <img src="./public/img/rodalivre6vol2.jpg" alt="Roda livre 6 velocidades para bicicleta de marcha"
-                                    title="Roda livre 6 velocidades para bicicleta de marcha">
-                            </a>
-                            <br>
+                        <li class="box-produto" id="transmissao">
+                            <div>
+                                <a href="detalhesrodalivre6velocidades.html">
+                                    <img src="./public/img/rodalivre6vol2.jpg" alt="Roda livre 6 velocidades para bicicleta de marcha" title="Roda livre 6 velocidades para bicicleta de marcha" onmouseover="destaque(this)" onmouseout="normal(this)">
+                                </a>
+                            </div>
+
                             <p>Roda livre 6 velocidades</p>
                             <hr>
                             <p class="precoTachado">R$ 32,50</p>
@@ -182,11 +205,13 @@
                             <a href="detalhesrodalivre6velocidades.html"><button>Detalhes</button></a>
                             <a href="manutencao.html"><button>Comprar</button></a><br><br>
                         </li>
-                        <li class="box-produto">
-                            <a href="detalhescuborolamdiante.html">
-                                <img src="./public/img/cuborolamento_dianteiro1.jpg" alt="Cubo dianteiro com rolametos" title="Cubo dianteiro com rolametos">
-                            </a>
-                            <br>
+                        <li class="box-produto" id="componente">
+                            <div>
+                                <a href="detalhescuborolamdiante.html">
+                                    <img src="./public/img/cuborolamento_dianteiro1.jpg" alt="Cubo dianteiro com rolametos" title="Cubo dianteiro com rolametos" onmouseover="destaque(this)" onmouseout="normal(this)">
+                                </a>
+                            </div>
+
                             <p>Cubo dianteiro com rolamentos</p>
                             <hr>
                             <p class="precoTachado">R$ 24,90</p>
@@ -194,16 +219,116 @@
                             <a href="detalhescuborolamdiante.html"><button>Detalhes</button></a>
                             <a href="manutencao.html"><button>Comprar</button></a><br><br>
                         </li>
-                        <li class="box-produto">
-                            <a href="detalhescaixadirecao.html">
-                                <img src="./public/img/caixadirecaotrava1.jpg" alt="Caixa de direção 8 peças com trava" title="Caixa de direção 8 peças com trava">
-                            </a>
-                            <br>
+                        <li class="box-produto" id="componente">
+                            <div>
+                                <a href="detalhescaixadirecao.html">
+                                    <img src="./public/img/caixadirecaotrava1.jpg" alt="Caixa de direção 8 peças com trava" title="Caixa de direção 8 peças com trava" onmouseover="destaque(this)" onmouseout="normal(this)">
+                                </a>
+                            </div>
+
                             <p>Caixa de direção com trava</p>
                             <hr>
                             <p class="precoTachado">R$ 15,90</p>
                             <p class="precoDeVenda">R$ 13,50</p>
                             <a href="detalhescaixadirecao.html"><button>Detalhes</button></a>
+                            <a href="manutencao.html"><button>Comprar</button></a><br><br>
+                        </li>
+                        <li class="box-produto" id="acessorio">
+                            <div>
+                                <a href="manutencao.html">
+                                    <img src="./public/img/#.jpg" alt="Campainha plim plim" title="Campainha plim plim" onmouseover="destaque(this)" onmouseout="normal(this)">
+                                </a>
+                            </div>
+
+                            <p>Campainha plim plim</p>
+                            <hr>
+                            <p class="precoTachado">R$ 12,40</p>
+                            <p class="precoDeVenda">R$ 10,10</p>
+                            <a href="manutencao.html"><button>Detalhes</button></a>
+                            <a href="manutencao.html"><button>Comprar</button></a><br><br>
+                        </li>
+                        <li class="box-produto" id="acessorio">
+                            <div>
+                                <a href="manutencao.html">
+                                    <img src="./public/img/#.jpg" alt="Adesivo vinil" title="Adesivo vinil" onmouseover="destaque(this)" onmouseout="normal(this)">
+                                </a>
+                            </div>
+
+                            <p>Adesivo vinil</p>
+                            <hr>
+                            <p class="precoTachado">R$ 4,70</p>
+                            <p class="precoDeVenda">R$ 3,50</p>
+                            <a href="manutencao.html"><button>Detalhes</button></a>
+                            <a href="manutencao.html"><button>Comprar</button></a><br><br>
+                        </li>
+                        <li class="box-produto" id="componente">
+                            <div>
+                                <a href="manutencao.html">
+                                    <img src="./public/img/#.jpg" alt="Manopla" title="Manopla" onmouseover="destaque(this)" onmouseout="normal(this)">
+                                </a>
+                            </div>
+
+                            <p>Manopla</p>
+                            <hr>
+                            <p class="precoTachado">R$ 12,90</p>
+                            <p class="precoDeVenda">R$ 10,50</p>
+                            <a href="manutencao.html"><button>Detalhes</button></a>
+                            <a href="manutencao.html"><button>Comprar</button></a><br><br>
+                        </li>
+                        <li class="box-produto" id="acessorio">
+                            <div>
+                                <a href="manutencao.html">
+                                    <img src="./public/img/#.jpg" alt="Bagageiro" title="Bagageiro" onmouseover="destaque(this)" onmouseout="normal(this)">
+                                </a>
+                            </div>
+
+                            <p>Bagageiro</p>
+                            <hr>
+                            <p class="precoTachado">R$ 39,90</p>
+                            <p class="precoDeVenda">R$ 36,70</p>
+                            <a href="manutencao.html"><button>Detalhes</button></a>
+                            <a href="manutencao.html"><button>Comprar</button></a><br><br>
+                        </li>
+                        <li class="box-produto" id="servico">
+                            <div>
+                                <a href="manutencao.html">
+                                    <img src="./public/img/#.jpg" alt="Revisão básica" title="Revisão básica" onmouseover="destaque(this)" onmouseout="normal(this)">
+                                </a>
+                            </div>
+
+                            <p>Revisão básica</p>
+                            <hr>
+                            <p class="precoTachado">R$ 59,90</p>
+                            <p class="precoDeVenda">R$ 54,50</p>
+                            <a href="manutencao.html"><button>Detalhes</button></a>
+                            <a href="manutencao.html"><button>Comprar</button></a><br><br>
+                        </li>
+                        <li class="box-produto" id="servico">
+                            <div>
+                                <a href="manutencao.html">
+                                    <img src="./public/img/#" alt="Revisão completa" title="Revisão completa" onmouseover="destaque(this)" onmouseout="normal(this)">
+                                </a>
+                            </div>
+
+                            <p>Revisão completa</p>
+                            <hr>
+                            <p class="precoTachado">R$ 105,90</p>
+                            <p class="precoDeVenda">R$ 93,50</p>
+                            <a href="manutencao.html"><button>Detalhes</button></a>
+                            <a href="manutencao.html"><button>Comprar</button></a><br><br>
+                        </li>
+                        <li class="box-produto" id="servico">
+                            <div>
+                                <a href="manutencao.html">
+                                    <img src="./public/img/#" alt="Alinhamento das rodas da bike" title="Caixa de direção 8 peças com trava" onmouseover="destaque(this)" onmouseout="normal(this)">
+                                </a>
+                            </div>
+
+                            <p>Alinhamento das rodas</p>
+                            <hr>
+                            <p class="precoTachado">R$ 29,90</p>
+                            <p class="precoDeVenda">R$ 25,50</p>
+                            <a href="manutencao.html"><button>Detalhes</button></a>
                             <a href="manutencao.html"><button>Comprar</button></a><br><br>
                         </li>
                     </ul>

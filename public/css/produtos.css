@@ -38,10 +38,15 @@
 .box-produto {
     text-align: center;
     display: inline-block;
-    width: 14em;    
+    width: 14em;
+    height: 355px;
+}
+
+li.box-produto div {
+    height: 180px;
 }
 
 .box-produto img {
     border-radius: 3px;
-    height: 10em;
+    height: 160px;
 }
