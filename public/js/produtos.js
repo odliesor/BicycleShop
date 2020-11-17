@@ -21,13 +21,11 @@ let destaca_img = (imagem) => {
 }
 
 let normaliza_img = (imagem) => {
-    imagem.style.height = "160px";
-    
+    imagem.style.height = "160px";    
 }
 
 let destaca_produto = (produto) => {
-    produto.style.background = "LightGrey";
-    
+    produto.style.background = "LightGrey";    
 }
 
 let normaliza_produto = (produto) => {

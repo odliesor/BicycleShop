@@ -87,6 +87,16 @@ ul.navegaPagina li {
 
 div.frete input {
     margin: 4px;
+    width: 140px;
+    display: inline;
+}
+
+#btn_calc_frete, #formulario_cep {
+    display: inline-block;
+}
+
+#label_cep {
+    display: block;
 }
 
 div#areaDescricao p, div#areaEspecificacao li, div#areaComentarios .caixaFlexivel p {

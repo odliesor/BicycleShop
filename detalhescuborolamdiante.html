@@ -12,6 +12,8 @@
         <link rel="stylesheet" href="./public/css/detalhesProduto.css">
         <link rel="stylesheet" href="./public/css/lojas.css">
         <link rel="stylesheet" href="./public/css/contatos.css">
+
+        <script src="./public/js/detalhes-do-produto.js"></script>
     </head>
     <body>
         <!-- 
@@ -32,8 +34,7 @@
                     <a href="contatos.html">Fale conosco</a>
                 </li>
                 <li class="disporEmLinha">
-                    <a href="carrinho.html"><img src="./public/img/carrinho2.png" alt="Carrinho de compras"
-                            title="Seu carrinho de compras"></a>
+                    <a href="carrinho.html"><img src="./public/img/carrinho2.png" alt="Carrinho de compras" title="Seu carrinho de compras"></a>
                 </li>
             </ul>
         </nav>
@@ -92,12 +93,17 @@
                             </a>
                         </div>
                         <div class="frete">
-                            <form action="#">
-                                <!-- Formulário para calculo de frete atravéz do CEP, sem ação por enquanto -->
-                                <label for="cep">Informe seu CEP</label>
-                                <input type="number" id="cep" name="cep" placeholder="somente números">
-                                <input type="submit" value="Calcular frete">
-                            </form>
+                            <div id="formulario_cep">
+                                <form>
+                                    <!-- Formulário para calculo de frete atravéz do CEP. -->
+                                    <label id="label_cep" for="cep">Informe seu CEP</label>
+                                    <input type="number" id="cep" name="cep" placeholder="apenas números">
+                                </form>
+                            </div>
+                            <div id="btn_calc_frete">
+                                <button onclick="verifica_cep();">Calcular frete</button>
+                            </div>
+                            <p id="resposta_do_frete"></p>
                         </div>
                     </div>
                     <hr>
