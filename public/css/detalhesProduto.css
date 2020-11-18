@@ -35,6 +35,7 @@ img.imgMiniatura:hover~img.imgAmpliada {
 .resumoProduto {
     margin-left: 42rem;
     padding-left: 20px;
+    min-height: 460px;
 }
 
 .resumoProduto p {
@@ -46,20 +47,35 @@ div.resumoProduto ul {
     display: inline-block;
 }
 
+.navegaPagina {
+    padding-left: 0;
+}
+
 ul.navegaPagina li {
     margin: 4px;
 }
 
-.opcoesPagamento {
-    padding: 4px;
-    color: DarkGray;
-    background-color: LightGrey;
-    border-radius: 3px;
+ul.navegaPagina button {
+    width: 179px;
 }
 
-.opcoesPagamento a {
-    text-decoration: none;
-    color:DarkGray;
+.compre{
+    width: 50%;
+    margin-top: auto;
+    text-align: center;
+}
+
+div.compre p {
+    text-align: center;
+}
+
+.opcoesPagamento {
+    text-align: center;
+    margin-left: 25px;
+    padding: 4px 20px 4px 20px;
+    background-color: LightGrey;
+    border-radius: 3px;
+    width: 80%;
 }
 
 #desativado {
@@ -76,25 +92,54 @@ ul.navegaPagina li {
 }
 
 .botaoComprar {
-    margin-right: 60pt;
+    font-weight: bold;
     color: green;
     font-size:25px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mostra_oculta_opc_pag_id {
+    margin-bottom: 0;
+    text-align: center;
+    margin-left: 50%;
 }
 
 .caixaFlexivel {
     display: flex;
 }
 
+.navega_e_compra{
+    display: flex;
+    justify-content: space-between;
+}
+
+.frete {
+    width: 50%;
+}
+
 div.frete input {
-    margin: 4px;
+    margin: 4px 0px 4px 4px;
     width: 140px;
     display: inline;
+}
+
+div.frete label {
+    margin-left: 10px;
 }
 
 #btn_calc_frete, #formulario_cep {
     display: inline-block;
 }
 
+#btn_calc_frete button{
+    width: 120px;
+}
+
+#formulario_cep input {
+    width: 130px;
+}
 #label_cep {
     display: block;
 }

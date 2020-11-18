@@ -1,3 +1,27 @@
+const produto_preco = {
+    preco_selim: "20,10",
+    preco_roda_livre_6veloc: "29,90",
+    preco_pedal: "14,90",
+    preco_pedivela: "22,80",
+    preco_guidao_strada: "20,90",
+    preco_guidao_mk: "40,90",
+    preco_garfo: "17,90",
+    preco_cubo_rolam_diant: "22,30",
+    preco_coroa_3vel: "21,50",
+    preco_caixa_direcao: "13,50",
+    preco_bomba_pedal: "18,75",
+    preco_bomba_mao: "13,20",
+    preco_campainha: "10,10",
+    preco_adesivo: "3,50",
+    preco_manopla: "10,50",
+    preco_bagageiro: "36,70",
+    preco_revisao_basica: "54,50",
+    preco_revisao_completa: "93,50",
+    preco_alinha_rodas: "25,50"
+};
+
+let mostra = true;
+
 function verifica_cep(){
     let formato_de_cep = /^[0-9]{8}$/;
     let cep = document.getElementById("cep").value;
@@ -39,5 +63,110 @@ function verifica_cep(){
         }
     } else {
         alert("Formato de CEP inválido.");
+    }
+}
+
+function getValor(produto_recebido){
+    let produto_identificado = identifica_produto(produto_recebido);
+    let preco = parseFloat(produto_identificado.replace(',', '.'));
+    let preco_formatado = preco.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
+    document.getElementById("valor_id").innerHTML = preco_formatado;
+
+    if(preco >= 20){
+        for(let i = 2; (preco / i) >= 10 && i < 11; i++){
+            let opcoesPagamento = document.getElementById("opcoes_pagamento_id").innerHTML;
+            let parcelas = (preco / i).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
+            opcoesPagamento += "<li>" + i + " X " + parcelas + " sem juros</li>";
+            document.getElementById("opcoes_pagamento_id").innerHTML = opcoesPagamento;
+            document.getElementById("opcoes_pagamento_id").style.display = "none";
+            mostra = false;
+            document.getElementById("mostra_oculta_opc_pag_id").innerHTML= "Mostar mais.";
+        }
+    } else if(preco >= 19.995 && preco <= 19.999) {
+        document.getElementById("mostra_oculta_opc_pag_id").innerHTML = "Parcelamento indisponível pra este produto.";
+        document.getElementById("opcoes_pagamento_id").style.display = "none";
+        mostra = true;
+    } else {
+        document.getElementById("mostra_oculta_opc_pag_id").style.display = "none";
+        document.getElementById("opcoes_pagamento_id").style.display = "none";
+        mostra = false;
+    }
+}
+
+function mostra_oculta_opc_pag(){
+    if(mostra){
+        document.getElementById("opcoes_pagamento_id").style.display = "none";
+        mostra = false;        
+        document.getElementById("mostra_oculta_opc_pag_id").innerHTML= "Mostrar mais.";
+    } else {
+        document.getElementById("opcoes_pagamento_id").style.display = "block";
+        mostra = true;
+        document.getElementById("mostra_oculta_opc_pag_id").innerHTML= "Ocultar.";
+    }
+    
+}
+
+function identifica_produto(produto_relacionado){
+    let preco_atual_produto = produto_preco;
+
+    if(produto_relacionado == "selim"){
+        preco_atual_produto = produto_preco;
+        return(preco_atual_produto.preco_selim);
+    } else if(produto_relacionado == "roda_livre_6veloc"){
+        preco_atual_produto = produto_preco;
+        return(preco_atual_produto.preco_roda_livre_6veloc);
+    } else if(produto_relacionado == "pedal"){
+        preco_atual_produto = produto_preco;
+        return(preco_atual_produto.preco_pedal);
+    } else if(produto_relacionado == "pedivela"){
+        preco_atual_produto = produto_preco;
+        return(preco_atual_produto.preco_pedivela);
+    } else if(produto_relacionado == "guidao_strada"){
+        preco_atual_produto = produto_preco;
+        return(preco_atual_produto.preco_guidao_strada);
+    } else if(produto_relacionado == "guidao_mk"){
+        preco_atual_produto = produto_preco;
+        return(preco_atual_produto.preco_guidao_mk);
+    } else if(produto_relacionado == "garfo"){
+        preco_atual_produto = produto_preco;
+        return(preco_atual_produto.preco_garfo);
+    } else if(produto_relacionado == "cubo_rolam_diant"){
+        preco_atual_produto = produto_preco;
+        return(preco_atual_produto.preco_cubo_rolam_diant);
+    } else if(produto_relacionado == "coroa_3vel"){
+        preco_atual_produto = produto_preco;
+        return(preco_atual_produto.preco_coroa_3vel);
+    } else if(produto_relacionado == "caixa_direcao"){
+        preco_atual_produto = produto_preco;
+        return(preco_atual_produto.preco_caixa_direcao);
+    } else if(produto_relacionado == "bomba_pedal"){
+        preco_atual_produto = produto_preco;
+        return(preco_atual_produto.preco_bomba_pedal);
+    } else if(produto_relacionado == "bomba_mao"){
+        preco_atual_produto = produto_preco;
+        return(preco_atual_produto.preco_bomba_mao);
+    } else if(produto_relacionado == "campainha:"){
+        preco_atual_produto = produto_preco;
+        return(preco_atual_produto.preco_campainha);
+    } else if(produto_relacionado == "adesivo"){
+        preco_atual_produto = produto_preco;
+        return(preco_atual_produto.preco_adesivo);
+    } else if(produto_relacionado == "manopla"){
+        preco_atual_produto = produto_preco;
+        return(preco_atual_produto.preco_manopla);
+    } else if(produto_relacionado == "bagageiro"){
+        preco_atual_produto = produto_preco;
+        return(preco_atual_produto.preco_bagageiro);
+    } else if(produto_relacionado == "revisao_basica"){
+        preco_atual_produto = produto_preco;
+        return(preco_atual_produto.preco_revisao_basica);
+    } else if(produto_relacionado == "revisao_completa"){
+        preco_atual_produto = produto_preco;
+        return(preco_atual_produto.preco_revisao_completa);
+    } else if(produto_relacionado == "alinha_rodas"){
+        preco_atual_produto = produto_preco;
+        return(preco_atual_produto.preco_alinha_rodas);
+    } else {
+        return Error;
     }
 }

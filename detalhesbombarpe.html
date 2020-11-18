@@ -15,7 +15,7 @@
 
         <script src="./public/js/detalhes-do-produto.js"></script>
     </head>
-    <body>
+    <body onload="getValor('bomba_pedal')" id="bomba_pedal">
         <!-- 
             Início do menu
         -->
@@ -62,19 +62,7 @@
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis asperiores natus nostrum corrupti et?
                         </p>
                     </div>
-                    <div class="caixaFlexivel">
-                        <div>
-                            <ul class="opcoesPagamento">
-                                <li>R$ 99,99 À vista</li>
-                                <li>2 x R$ 99,99 sem juros</li>
-                                <li>3 x R$ 99,99 sem juros</li>
-                                <li>4 x R$ 99,99 sem juros</li>
-                                <li>5 x R$ 99,99 com juros</li>
-                                <li>6 x R$ 99,99 com juros</li>
-                                <li><a href="#">Mais opções de pagamento</a></li>
-                                <li id="desativado">ATENÇÃO: Campo desativado</li>
-                            </ul>
-                        </div>
+                    <div class="navega_e_compra"> 
                         <div>
                             <ul class="navegaPagina">
                                 <li><a href="#areaDescricao"><button>Descrição completa</button></a></li>
@@ -83,15 +71,16 @@
                                 <li><a href="#areaDuvidas"><button>Dúvidas</button></a></li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="caixaFlexivel">
-                        <div>
+                        <div class="compre">
                             <p class="precoTachado tamanhoMedio">R$ 20,30</p>
-                            <p class="precoDeVenda tamanhoGrande">R$ 18,75</p>
+                            <p class="precoDeVenda tamanhoGrande" id="valor_id"></p>
                             <a href="manutencao.html">
                                 <button class="botaoComprar">Comprar</button>
                             </a>
                         </div>
+                    </div>
+                    <p onclick="mostra_oculta_opc_pag()" id="mostra_oculta_opc_pag_id"></p>
+                    <div class="caixaFlexivel"> 
                         <div class="frete">
                             <div id="formulario_cep">
                                 <form>
@@ -104,6 +93,11 @@
                                 <button onclick="verifica_cep();">Calcular frete</button>
                             </div>
                             <p id="resposta_do_frete"></p>
+                        </div>
+                        <div>
+                            <ul class="opcoesPagamento" id="opcoes_pagamento_id">
+                                
+                            </ul>
                         </div>
                     </div>
                     <hr>
