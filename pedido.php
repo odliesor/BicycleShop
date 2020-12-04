@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="./public/css/detalhesProduto.css">
         <link rel="stylesheet" href="./public/css/lojas.css">
         <link rel="stylesheet" href="./public/css/contatos.css">
+        <link rel="stylesheet" href="./public/css/pedido.css">
     </head>
     <body>
         <!-- 
@@ -23,7 +24,7 @@
                     <a href="index.html"><img src="./public/img/logo.png" alt="Logomarca Bicycle Shop" title="Bicycle Shop - Impulsionando sua bike!"></a>
                 </li>
                 <li class="disporEmLinha">
-                    <a href="produtos.html">Produtos</a>
+                    <a href="produtos.php">Produtos</a>
                 </li>
                 <li class="disporEmLinha">
                     <a href="lojas.html">Nossas lojas</a>
@@ -41,17 +42,17 @@
 
         <?php
             $servidor = "127.0.0.1";
-            $usuario = "root";
-            $senha = "dbtoor";
-            $banco = "bicycleshop";
+            $usuario  = "root";
+            $senha    = "dbtoor";
+            $banco    = "bicycleshop";
 
             $conect = mysqli_connect($servidor, $usuario, $senha, $banco);
             if(isset($_POST['enviar'])){
-                $nome = $_POST['nome'];
-                $endereco = $_POST['endereco'];
-                $fone = $_POST['fone'];
-                $produto = $_POST['produto'];
-                $preco = $_POST['preco'];
+                $nome       = $_POST['nome'];
+                $endereco   = $_POST['endereco'];
+                $fone       = $_POST['fone'];
+                $produto    = $_POST['produto'];
+                $preco      = $_POST['preco'];
                 $precofinal = $_POST['precofinal'];
                 $quantidade = $_POST['quantidade'];
                 
@@ -64,12 +65,16 @@
         <form action="pedido.php" method="post">
             <label for="nome">Digite seu nome</label>
             <input type="text" name="nome" id="nome_id">
+
             <label for="endereco">Seu endereço</label>
             <input type="text" name="endereco" id="endereco_id">
+
             <label for="fone">Telefone</label>
             <input type="number" name="fone" id="fone_id">
+
             <label for="produto">Qual produto você esta comprando?</label>
             <input type="text" name="produto" id="produto_id">
+            
             <label for="preco">Valor</label>
             <input type="number" name="preco" id="precoid">
             <label for="precofinal">Valor final</label>

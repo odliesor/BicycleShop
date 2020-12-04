@@ -26,7 +26,7 @@
                     <a href="index.html"><img src="./public/img/logo.png" alt="Logomarca Bicycle Shop" title="Bicycle Shop - Impulsionando sua bike!"></a>
                 </li>
                 <li class="disporEmLinha">
-                    <a href="produtos.html">Produtos</a>
+                    <a href="produtos.php">Produtos</a>
                 </li>
                 <li class="disporEmLinha">
                     <a href="lojas.html">Nossas lojas</a>
@@ -67,10 +67,10 @@
                 <section class="area-produtos">
                     <ul class="justifica">
                         <?php
-                            $servidor = "127.0.0.1";
-                            $usuario = "root";
-                            $senha = "dbtoor";
-                            $banco = "bicycleshop";
+                            $servidor   = "127.0.0.1";
+                            $usuario    = "root";
+                            $senha      = "dbtoor";
+                            $banco      = "bicycleshop";
 
                             $conect = mysqli_connect($servidor, $usuario, $senha, $banco);
                             $resultado = mysqli_query($conect, "SELECT * FROM produto");
@@ -80,8 +80,8 @@
                         ?>
                         <li class="box-produto" id="<?php echo $linha['categoria']; ?>" onmouseover="destaca_produto(this)" onmouseout="normaliza_produto(this)">
                             <div>
-                                <a href="detalhespedal.html">
-                                    <img class="imagem_destaca" src="./<?php echo $linha['imagem']; ?>" alt="Pedal de plastico - Preto com Vermelho" title="Pedal de plastico - Preto com Vermelho" onmouseover="destaca_img(this)" onmouseout="normaliza_img(this)">
+                                <a href="<?php echo $linha['url_page_detalhes']; ?>">
+                                    <img class="imagem_destaca" src="./public/img/<?php echo $linha['imagem']; ?>" alt="<?php echo $linha['descricao']; ?>" title="<?php echo $linha['descricao']; ?>" onmouseover="destaca_img(this)" onmouseout="normaliza_img(this)">
                                 </a>
                             </div>
 
